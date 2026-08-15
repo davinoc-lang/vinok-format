@@ -5,7 +5,7 @@
     "entry": "/dir/index.ts"
   },
   "runtime": {
-    "bin": "...",
-    "command": "..."
+    "bin": "bun",
+    "command": "run"
   }
 }
