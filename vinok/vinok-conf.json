@@ -2,7 +2,7 @@
   "$schema": "vinok-conf",
   "version": "0.0.1",
   "cli": {
-    "entry": "/dir/index.ts"
+    "entry": "/your-dir/cli.ts" /* Path where the cli.ts file must be located for the Python launcher. */
   },
   "runtime": {
     "bin": "bun",
