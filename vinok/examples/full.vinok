@@ -1,0 +1,86 @@
+# ============================================
+# VINOK FORMAT — Exemple complet de test
+# ============================================
+
+"""
+
+    VINOK COMMENT
+
+"""
+
+app-name = "MyAwesomeApp"
+version = "2.1.0"
+env = "production"
+description = """
+  This is a multiline description
+  that spans several lines.
+  Very useful for documentation!
+"""
+
+# Keys with dashes are native
+default-port = 8080
+default-timeout = 30000
+max-connections = 100
+
+# Backtick keys for complex names
+`_gh/App-h__` = "values"
+`pool size` = 10
+`content-type` = "application/json"
+`X-Custom-Header` = "my-value"
+
+# Server configuration
+server = [
+    host = "0.0.0.0",
+    port = ${default-port},
+    context-path = "/api/v2",
+    compression = true,
+    max-body-size = 10485760
+]
+
+# Database configuration
+database = [
+    url = "jdbc:postgresql://localhost:5432/myapp_db",
+    username = "app_user",
+    pool-size = 10,
+    timeout = ${default-timeout},
+    ssl = true,
+
+    pool = [
+        min-idle = 5,
+        max-active = 20,
+        validation-query = "SELECT 1"
+    ]
+]
+
+# Microservices (list of objects)
+microservices = [
+    [
+        name = "user-service",
+        endpoint = "http://localhost:8081",
+        health-check = "http://localhost:8081/health",
+        timeout = 5000
+    ],
+    [
+        name = "order-service",
+        endpoint = "http://localhost:8082",
+        health-check = "http://localhost:8082/health",
+        timeout = 10000
+    ]
+]
+
+# Feature flags (object as map)
+features = [
+    new-dashboard = true,
+    beta-feature = false,
+    dark-mode = true
+]
+
+# Simple list
+tags = ["web" "api" "production" "v${version}"] 
+# Interpolation
+startup-message = "Application ${app-name} v${version} started in ${env} mode"
+
+# Null and negative
+optional = null
+negative = -42
+ratio = 3.14159

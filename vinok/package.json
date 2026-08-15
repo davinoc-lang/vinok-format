@@ -1,0 +1,13 @@
+{
+  "name": "vinok",
+  "version": "2.0.0",
+  "description": "VINOK - Rich Minimal Config Format. Parser/Validator/Exporter OOP en TypeScript pour Bun.",
+  "module": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run src/cli.ts",
+    "test": "bun test tests/"
+  },
+  "keywords": ["vinok", "config", "parser", "configuration", "minimal"],
+  "license": "MIT"
+}
