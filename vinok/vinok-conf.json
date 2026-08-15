@@ -1,11 +1,11 @@
 {
   "$schema": "vinok-conf",
-  "version": "2.0.0",
+  "version": "0.0.1",
   "cli": {
-    "entry": "C:\\VINOK-FORMAT\\final-vinok\\src\\cli.ts"
+    "entry": "/dir/index.ts"
   },
   "runtime": {
-    "bin": "bun",
-    "command": "run"
+    "bin": "...",
+    "command": "..."
   }
 }
