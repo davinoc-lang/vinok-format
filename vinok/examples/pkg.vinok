@@ -1,7 +1,7 @@
-# DVAL Quest - Package Manifest
+# DAVINOC - Package Manifest
 # Test : objets [] sans virgules (séparation par newline)
 
-name = "dval-quest"
+name = "dv-quest"
 version = "0.1.0"
 
 scripts = [
