@@ -9,7 +9,7 @@ scripts = [
 
 test-utils = "dv tests/test_utils.dv"
 
-test-preprocessing = "dval tests/test_preprocessing.dv"
+test-preprocessing = "dv tests/test_preprocessing.dv"
 
 test-metrics = "dv tests/test_metrics.dv"
 
