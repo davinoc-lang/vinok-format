@@ -1,33 +1,54 @@
 # DAVINOC - Package Manifest
-# Test : objets [] sans virgules (séparation par newline)
+# Test: [] objects without commas (newline-separated)
 
 name = "dv-quest"
+
 version = "0.1.0"
 
 scripts = [
-    test-utils = "dv tests/test_utils.dv"
-    test-preprocessing = "dval tests/test_preprocessing.dv"
-    test-metrics = "dv tests/test_metrics.dv"
-    test-linear = "dv tests/test_linear_model.dv"
-    test-neighbors = "dval tests/test_neighbors.dv"
-    test-trees = "dv tests/test_trees.dv"
-    tutorial = "dv src/main.dv"
-    quickstart = "dv examples/quickstart.dv"
+
+test-utils = "dv tests/test_utils.dv"
+
+test-preprocessing = "dval tests/test_preprocessing.dv"
+
+test-metrics = "dv tests/test_metrics.dv"
+
+test-linear = "dv tests/test_linear_model.dv"
+
+test-neighbors = "dval tests/test_neighbors.dv"
+
+test-trees = "dv tests/test_trees.dv"
+
+tutorial = "dv src/main.dv"
+
+quickstart = "dv examples/quickstart.dv"
+
 ]
 
-# Même chose mais avec virgules (les deux syntaxes doivent marcher)
+# Same thing but with commas (both syntaxes should work)
+
 tools = [
-    linter = "dv tools/linter.dv",
-    formatter = "dval tools/formatter.dv",
-    bundler = "dv tools/bundler.dv",
+
+linter = "dv tools/linter.dv",
+
+formatter = "dv tools/formatter.dv",
+
+bundler = "dv tools/bundler.dv",
+
 ]
 
-# Liste sans virgules
+# List without commas
+
 authors = [
-    "Alice"
-    "Bob"
-    "Charlie"
+
+"Alice"
+
+"Bob"
+
+"Charlie"
+
 ]
 
-# Liste avec virgules
-keywords = ["dval", "quest", "rpg", "toolkit"]
+# List with commas
+
+keywords = ["dv", "quest", "rpg", "toolkit"]
